@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA6DECFE-5730-4B32-A054-83A9B4230B4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dersler</RootNamespace>
+    <AssemblyName>dersler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10aForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10aForm.Designer.cs">
+      <DependentUpon>10aForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10eForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10eForm.Designer.cs">
+      <DependentUpon>10eForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10fForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10fForm.Designer.cs">
+      <DependentUpon>10fForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10dForm.Designer.cs">
+      <DependentUpon>10dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10bForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10bForm.Designer.cs">
+      <DependentUpon>10bForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anaekran-Oto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaekran-Oto.Designer.cs">
+      <DependentUpon>anaekran-Oto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anaekran-Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaekran-Manual.Designer.cs">
+      <DependentUpon>anaekran-Manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersid.cs" />
+    <Compile Include="10cForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10cForm.Designer.cs">
+      <DependentUpon>10cForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oto-manual-secim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oto-manual-secim.Designer.cs">
+      <DependentUpon>oto-manual-secim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="10aForm.resx">
+      <DependentUpon>10aForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10eForm.resx">
+      <DependentUpon>10eForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10fForm.resx">
+      <DependentUpon>10fForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10dForm.resx">
+      <DependentUpon>10dForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10bForm.resx">
+      <DependentUpon>10bForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10cForm.resx">
+      <DependentUpon>10cForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anaekran-Oto.resx">
+      <DependentUpon>anaekran-Oto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anaekran-Manual.resx">
+      <DependentUpon>anaekran-Manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oto-manual-secim.resx">
+      <DependentUpon>oto-manual-secim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Screenshot_1.png" />
+    <Content Include="Resources\Screenshot_2.png" />
+    <Content Include="Resources\Screenshot_4.png" />
+    <Content Include="Resources\Screenshot_5.png" />
+    <Content Include="Resources\Screenshot_6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.4.1.0\build\Fody.targets" Condition="Exists('..\packages\Fody.4.1.0\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.4.1.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.4.1.0\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props'))" />
+  </Target>
+</Project>
